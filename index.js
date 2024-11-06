@@ -1,7 +1,8 @@
 require('dotenv').config();
 const express=require("express");
 const mongodatabase=require("mongoose");
-const userRouter = require("./userDataGetFolder/user.allData");
+const userRouter = require('./src/userDataGetFolder/user.allData');
+
 
 const app=express();
 app.use(express.json());
