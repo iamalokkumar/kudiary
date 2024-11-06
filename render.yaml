@@ -8,9 +8,9 @@ services:
     autoDeploy: true
     envVars:
       - key: PORT
-        value: "8080"  # You can set this if needed, but Render will usually auto-assign it
+        value: "8080"
 
-  # PR Previews
+  # PR Previews (automatically handled by Render)
   - type: web
     name: mongoUse-pr-preview
     env: node
@@ -20,5 +20,5 @@ services:
     autoDeploy: true
     envVars:
       - key: PORT
-        value: "8080"  # Similarly, you can optionally set this for PR previews
-    pullRequestPreview: true
+        value: "8080"
+
